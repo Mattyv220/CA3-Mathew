@@ -31,6 +31,11 @@
         background-color: var(--c-background-highlights);
         color: var(--base-font-color);
       }
+      Header {
+        text-align: center;
+        font-size: 150%;
+        color: var(--c-yellow);
+      }
       main {
         color: var(--base-font-color);
       }
@@ -43,6 +48,12 @@
       .bordered {
         border: 3px solid var(--c-cyan);
       }
+      .navtime {
+        list-style: none;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+      }
     </style>
 
   </head>
@@ -52,11 +63,11 @@
     <!-- Here is our main header that is used across all the pages of our website -->
 
     <header>
-      <h1>Header</h1>
+      <h1>Header </h1>
     </header>
 
     <nav>
-      <ul>
+      <ul class="navtime">
         <li><a href="#" class="link">Home</a></li>
         <li><a href="#" class="link">Our team</a></li>
         <li><a href="#" class="link">Projects</a></li>
@@ -97,7 +108,7 @@
       <aside>
         <h2>Related</h2>
 
-        <ul >
+        <ul>
           <li><a href="#" class="link">Oh I do like to be beside the seaside</a></li>
           <li><a href="#" class="link">Oh I do like to be beside the sea</a></li>
           <li><a href="#" class="link">Although in the North of England</a></li>
