@@ -25,7 +25,9 @@
         --c-green: rgb(133,153,0);
 
       }
-      body { background-color: var(--c-background-color);
+      body { 
+        background-color: var(--c-background-color);
+        max-width: 800px;
       }
       Header, footer { 
         background-color: var(--c-background-highlights);
@@ -38,6 +40,7 @@
       }
       main {
         color: var(--base-font-color);
+        display: flex;
       }
       .textL{
         color: var(--c-magenta);
@@ -53,12 +56,27 @@
         text-align: center;
         display: flex;
         justify-content: space-between;
+        padding-right: 50px;
       }
+      aside {
+        color: var(--c-green);
+        padding-right: 20px;
+      }
+      .textAside {
+        color: var(--c-red);
+      }
+      .linkA:hover {
+        color: var(--c-blue);
+      }
+      article h2, h3 {
+        padding-top: 50px;
+      }
+      
     </style>
 
   </head>
 
-  <body >
+  <body>
     
     <!-- Here is our main header that is used across all the pages of our website -->
 
@@ -109,12 +127,12 @@
         <h2>Related</h2>
 
         <ul>
-          <li><a href="#" class="link">Oh I do like to be beside the seaside</a></li>
-          <li><a href="#" class="link">Oh I do like to be beside the sea</a></li>
-          <li><a href="#" class="link">Although in the North of England</a></li>
-          <li><a href="#" class="link">It never stops raining</a></li>
-          <li><a href="#" class="link">Oh well...</a></li>
-        </ul><
+          <li><a href="#" class="linkA , textAside">Oh I do like to be beside the seaside</a></li>
+          <li><a href="#" class="linkA , textAside">Oh I do like to be beside the sea</a></li>
+          <li><a href="#" class="linkA , textAside">Although in the North of England</a></li>
+          <li><a href="#" class="linkA , textAside">It never stops raining</a></li>
+          <li><a href="#" class="linkA , textAside">Oh well...</a></li>
+        </ul>
       </aside>
 
     </main>
