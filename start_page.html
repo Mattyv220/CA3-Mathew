@@ -33,9 +33,16 @@
       }
       main {
         color: var(--base-font-color);
-
       }
-      
+      .textL{
+        color: var(--c-magenta);
+      }
+      .link:hover {
+        color: var(--c-orange);
+      }
+      .bordered {
+        border: 3px solid var(--c-cyan);
+      }
     </style>
 
   </head>
@@ -50,10 +57,10 @@
 
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Our team</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#" class="link">Home</a></li>
+        <li><a href="#" class="link">Our team</a></li>
+        <li><a href="#" class="link">Projects</a></li>
+        <li><a href="#" class="link">Contact</a></li>
       </ul>
 
        <!-- A Search form is another common non-linear way to navigate through a website. -->
@@ -73,17 +80,17 @@
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</p>
 
-        <h3>Subsection</h3>
+        <div class="bordered"><h3>Subsection</h3>
 
         <p>Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.</p>
 
-        <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
+        <p>Pelientesque auctor nisi id magna consequat sagittis. Curabitur dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p></div>
 
-        <h3>Another subsection</h3>
+        <div class="bordered"><h3>Another subsection</h3>
 
-        <p>Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
+        <p>Donec viverra mi quis quam <a href="#" class="textL , link">pulvinar</a> at malesuada arcu rhoncus. Cum soclis natoque penatibus et manis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
 
-        <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p>
+        <p>Vivamus fermentum semper porta. Nunc diam velit, adipscing ut tristique vitae sagittis vel odio. Maecenas convallis ullamcorper ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, is fringille sem nunc vet mi.</p></div>
       </article>
 
       <!-- the aside content can also be nested within the main content -->
@@ -91,12 +98,12 @@
         <h2>Related</h2>
 
         <ul >
-          <li><a href="#">Oh I do like to be beside the seaside</a></li>
-          <li><a href="#">Oh I do like to be beside the sea</a></li>
-          <li><a href="#">Although in the North of England</a></li>
-          <li><a href="#">It never stops raining</a></li>
-          <li><a href="#">Oh well...</a></li>
-        </ul></div>
+          <li><a href="#" class="link">Oh I do like to be beside the seaside</a></li>
+          <li><a href="#" class="link">Oh I do like to be beside the sea</a></li>
+          <li><a href="#" class="link">Although in the North of England</a></li>
+          <li><a href="#" class="link">It never stops raining</a></li>
+          <li><a href="#" class="link">Oh well...</a></li>
+        </ul><
       </aside>
 
     </main>
